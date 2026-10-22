@@ -611,4 +611,127 @@ About the “Sources”
 
 The text ends with a “Sources” heading but doesn’t actually list any sources. If this README is intended to be self-contained, remove that heading. If you want references, include links to relevant standards (for example, SPDX, CycloneDX, SLSA, JSON Schema) or your related repositories.
 
-Overall, this is a solid refactoring plan. It improves portability, clarifies repository identity, and separates governance documentation from future implementation work while preserving the underlying CAL:9 concepts.
+Overall, this is a solid refactoring plan. It improves portability, clarifies repository identity, and separates governance documentation from future implementation work while preserving the underlying CAL:9 concepts.A consistent way to extend your project-defined specification is to define rejection records as first-class audit artifacts. That keeps rejected inputs traceable while distinguishing them from accepted processing.
+
+Rejected Ingress Validation Rules (Project-defined)
+
+Purpose
+
+Define the minimum validation requirements for an Ingress Rejection Record. A rejection record documents that an ingress attempt was evaluated and rejected. It is not evidence that the input successfully entered the execution pipeline.
+
+⸻
+
+Validation Order
+
+Ingress
+    │
+    ▼
+Structural Validation
+    │
+    ▼
+Decision
+   ├──────────────┐
+   │              │
+Accept         Reject
+   │              │
+   ▼              ▼
+Ingress       Rejection Record
+Record         (Audit Artifact)
+
+⸻
+
+Required Fields
+
+Field	Required	Description
+rejection_id	Yes	Unique identifier
+ingress_id	Yes	Identifier of evaluated ingress
+rejection_reason	Yes	Machine-readable reason code
+validation_stage	Yes	Stage where rejection occurred
+timestamp	Yes	Decision timestamp
+validator	Yes	Validator identity
+input_digest	Yes	Digest of the evaluated input
+canonical_version	Yes	Specification version
+state	Yes	rejected
+
+⸻
+
+Reason Codes
+
+Code	Meaning
+R001	Invalid grammar
+R002	Invalid token sequence
+R003	Missing required field
+R004	Unsupported encoding
+R005	Normalization failure
+R006	Canonicalization failure
+R007	Type validation failure
+R008	Integrity verification failed
+R009	Policy violation
+R010	Unknown rejection reason
+
+⸻
+
+Validation Rules
+
+A valid rejection record SHALL satisfy all of the following:
+
+1. rejection_id is globally unique.
+2. ingress_id references exactly one evaluated ingress attempt.
+3. rejection_reason contains one defined reason code.
+4. validation_stage identifies the stage where processing stopped.
+5. input_digest corresponds to the evaluated raw input.
+6. No commit identifier is present for rejected ingress.
+7. Registry insertion SHALL NOT mark the input as canonical.
+8. The rejection record itself MAY be stored as an append-only audit event.
+
+⸻
+
+State Model
+
+received
+    │
+    ▼
+validated
+    │
+    ▼
+rejected
+
+No transition from rejected directly to canonical is permitted. Reprocessing requires a new ingress attempt with a new identifier.
+
+⸻
+
+Example Record
+
+{
+  "record_type": "rejection",
+  "rejection_id": "REJ-000021",
+  "ingress_id": "ING-000021",
+  "validation_stage": "tokenization",
+  "rejection_reason": "R002",
+  "timestamp": "2026-10-23T14:37:21Z",
+  "validator": "validator-engine",
+  "input_digest": "sha256:...",
+  "canonical_version": "6185-1.0",
+  "state": "rejected"
+}
+
+⸻
+
+Audit Rules
+
+* Every rejected ingress generates exactly one rejection record.
+* Rejection records are immutable after creation.
+* Rejection records are append-only.
+* Rejection records preserve provenance to the evaluated ingress.
+* A rejected ingress cannot produce a canonical registry entry unless it is resubmitted as a new ingress and successfully passes the full processing pipeline.
+
+⸻
+
+Separation of Evidence and Criteria
+
+To maintain a clear audit boundary:
+
+* Normative criteria define what a valid rejection record must contain (required fields, uniqueness, state rules, reason codes).
+* Execution evidence records what actually occurred for a specific ingress attempt (timestamps, validator identity, digest, and rejection reason).
+
+This separation ensures the specification defines requirements without implying that any particular rejection event has occurred unless supported by an actual rejection record.

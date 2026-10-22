@@ -1,6 +1,346 @@
 # Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+#^=The specification is internally consistent as a governance and ingestion model. The leading symbolic sequence:
+
+=%#=A+.7=
+LoGoS.olos.6185:85ad(MS::CD)
+
+should be treated as project-defined symbolic identifiers unless a formal encoding is specified. Without a documented grammar or decoder, no semantic interpretation should be asserted beyond recording them as observed tokens.
+
+A refined version that incorporates those identifiers while preserving the governance principles is:
+
+RESOLVE_RAW_INPUT_BINARY
+Identifier:
+    LoGoS.olos.6185:85ad(MS::CD)
+Observed Symbolic Sequence:
+    =%#=A+.7=
+Classification:
+    PROJECT_DEFINED
+    STATUS: OBSERVED
+    SEMANTICS: NOT_ESTABLISHED
+Purpose:
+    Preserve the original binary input exactly as acquired while enabling
+    deterministic, governed selection and subsequent interpretation.
+Canonical Pipeline
+Raw Input
+    │
+    ▼
+Binary Acquisition
+    │
+    ▼
+Binary Set (B)
+    │
+    ▼
+Governed Mask (M)
+    │
+    ▼
+Selection (S = B ∧ M)
+    │
+    ▼
+Decode
+    │
+    ▼
+Tokenization
+    │
+    ▼
+Canonical Representation
+    │
+    ▼
+Schema Validation
+    │
+    ▼
+Evidence Commitment
+    │
+    ▼
+Registry Reference
+Mathematical Definition
+B = { b_i | b_i ∈ {0,1} }
+M = { m_i | m_i ∈ {0,1} }
+S = B ∧ M
+Selection Function
+Select(Graph, Rules, Context)
+    ↓
+Selected Binary
+    ↓
+Decoded Artifact
+    ↓
+Governed Object
+Governance Invariants
+• Raw binary is immutable.
+• Canonical identities are stable.
+• Masks are governed and versioned.
+• Selection is deterministic for governed inputs.
+• Decoding is reproducible for a given decoder version.
+• Evidence accumulates monotonically.
+• Every generated artifact retains complete provenance.
+• Non-governed inputs are rejected or quarantined prior to selection.
+• Commitment is a governed write and is separate from selection.
+Evidence BoundaryThe specification is internally consistent as a governance and ingestion model. The leading symbolic sequence:
+
+=%#=A+.7=
+LoGoS.olos.6185:85ad(MS::CD)
+
+should be treated as project-defined symbolic identifiers unless a formal encoding is specified. Without a documented grammar or decoder, no semantic interpretation should be asserted beyond recording them as observed tokens.
+
+A refined version that incorporates those identifiers while preserving the governance principles is:
+
+RESOLVE_RAW_INPUT_BINARY
+Identifier:
+    LoGoS.olos.6185:85ad(MS::CD)
+Observed Symbolic Sequence:
+    =%#=A+.7=
+Classification:
+    PROJECT_DEFINED
+    STATUS: OBSERVED
+    SEMANTICS: NOT_ESTABLISHED
+Purpose:
+    Preserve the original binary input exactly as acquired while enabling
+    deterministic, governed selection and subsequent interpretation.
+Canonical Pipeline
+Raw Input
+    │
+    ▼
+Binary Acquisition
+    │
+    ▼
+Binary Set (B)
+    │
+    ▼
+Governed Mask (M)
+    │
+    ▼
+Selection (S = B ∧ M)
+    │
+    ▼
+Decode
+    │
+    ▼
+Tokenization
+    │
+    ▼
+Canonical Representation
+    │
+    ▼
+Schema Validation
+    │
+    ▼
+Evidence Commitment
+    │
+    ▼
+Registry Reference
+Mathematical Definition
+B = { b_i | b_i ∈ {0,1} }
+M = { m_i | m_i ∈ {0,1} }
+S = B ∧ M
+Selection Function
+Select(Graph, Rules, Context)
+    ↓
+Selected Binary
+    ↓
+Decoded Artifact
+    ↓
+Governed Object
+Governance Invariants
+• Raw binary is immutable.
+• Canonical identities are stable.
+• Masks are governed and versioned.
+• Selection is deterministic for governed inputs.
+• Decoding is reproducible for a given decoder version.
+• Evidence accumulates monotonically.
+• Every generated artifact retains complete provenance.
+• Non-governed inputs are rejected or quarantined prior to selection.
+• Commitment is a governed write and is separate from selection.The specification is internally consistent as a governance and ingestion model. The leading symbolic sequence:
+
+=%#=A+.7=
+LoGoS.olos.6185:85ad(MS::CD)
+
+should be treated as project-defined symbolic identifiers unless a formal encoding is specified. Without a documented grammar or decoder, no semantic interpretation should be asserted beyond recording them as observed tokens.
+
+A refined version that incorporates those identifiers while preserving the governance principles is:
+
+RESOLVE_RAW_INPUT_BINARY
+Identifier:
+    LoGoS.olos.6185:85ad(MS::CD)
+Observed Symbolic Sequence:
+    =%#=A+.7=
+Classification:
+    PROJECT_DEFINED
+    STATUS: OBSERVED
+    SEMANTICS: NOT_ESTABLISHED
+Purpose:
+    Preserve the original binary input exactly as acquired while enabling
+    deterministic, governed selection and subsequent interpretation.
+Canonical Pipeline
+Raw Input
+    │
+    ▼
+Binary Acquisition
+    │
+    ▼
+Binary Set (B)
+    │
+    ▼
+Governed Mask (M)
+    │
+    ▼
+Selection (S = B ∧ M)
+    │
+    ▼
+Decode
+    │
+    ▼
+Tokenization=The specification is internally consistent as a governance and ingestion model. The leading symbolic sequence:
+
+=%#=A+.7=
+LoGoS.olos.6185:85ad(MS::CD)
+
+should be treated as project-defined symbolic identifiers unless a formal encoding is specified. Without a documented grammar or decoder, no semantic interpretation should be asserted beyond recording them as observed tokens.
+
+A refined version that incorporates those identifiers while preserving the governance principles is:
+
+RESOLVE_RAW_INPUT_BINARY
+Identifier:
+    LoGoS.olos.6185:85ad(MS::CD)
+Observed Symbolic Sequence:
+    =%#=A+.7=
+Classification:
+    PROJECT_DEFINED
+    STATUS: OBSERVED
+    SEMANTICS: NOT_ESTABLISHED
+Purpose:
+    Preserve the original binary input exactly as acquired while enabling
+    deterministic, governed selection and subsequent interpretation.
+Canonical Pipeline
+Raw Input
+    │
+    ▼
+Binary Acquisition
+    │
+    ▼
+Binary Set (B)
+    │
+    ▼
+Governed Mask (M)
+    │
+    ▼
+Selection (S = B ∧ M)
+    │
+    ▼
+Decode
+    │
+    ▼
+Tokenization
+    │
+    ▼
+Canonical Representation
+    │
+    ▼
+Schema Validation
+    │
+    ▼
+Evidence Commitment
+    │
+    ▼
+Registry Reference
+Mathematical Definition
+B = { b_i | b_i ∈ {0,1} }
+M = { m_i | m_i ∈ {0,1} }
+S = B ∧ M
+Selection Function
+Select(Graph, Rules, Context)
+    ↓
+Selected Binary
+    ↓
+Decoded Artifact
+    ↓
+Governed Object
+Governance Invariants
+• Raw binary is immutable.
+• Canonical identities are stable.
+• Masks are governed and versioned.
+• Selection is deterministic for governed inputs.
+• Decoding is reproducible for a given decoder version.
+• Evidence accumulates monotonically.
+• Every generated artifact retains complete provenance.
+• Non-governed inputs are rejected or quarantined prior to selection.
+• Commitment is a governed write and is separate from selection.
+Evidence Boundary
+Binary acquisition, masking, decoding, and validation establish governed
+artifacts above the Evidence Boundary.
+Claims regarding formal verification or operational execution require new,
+independently reviewable evidence below the Evidence Boundary.
+Status
+Observed binary source: ESTABLISHED
+Governed selection model: ESTABLISHED
+Formal semantics of the symbolic sequence: NOT_ESTABLISHED
+
+This preserves an important distinction: the symbolic strings (=%#=A+.7= and LoGoS.olos.6185:85ad(MS::CD)) are valid as identifiers or observed inputs within your governance framework, but their meaning should remain explicitly project-defined and not established until a formal grammar, encoding specification, or decoding evidence is added to the repository. This is consistent with the Resolve Kernel’s principle of separating observation, governed representation, and verified interpretation.
+    │
+    ▼
+Canonical Representation
+    │
+    ▼
+Schema Validation
+    │
+    ▼
+Evidence Commitment
+    │
+    ▼
+Registry Reference
+Mathematical Definition
+B = { b_i | b_i ∈ {0,1} }
+M = { m_i | m_i ∈ {0,1} }
+S = B ∧ M
+Selection Function
+Select(Graph, Rules, Context)
+    ↓
+Selected Binary
+    ↓
+Decoded Artifact
+    ↓
+Governed Object
+Governance Invariants
+• Raw binary is immutable.
+• Canonical identities are stable.
+• Masks are governed and versioned.
+• Selection is deterministic for governed inputs.
+• Decoding is reproducible for a given decoder version.
+• Evidence accumulates monotonically.
+• Every generated artifact retains complete provenance.
+• Non-governed inputs are rejected or quarantined prior to selection.
+• Commitment is a governed write and is separate from selection.
+Evidence Boundary
+Binary acquisition, masking, decoding, and validation establish governed
+artifacts above the Evidence Boundary.
+Claims regarding formal verification or operational execution require new,
+independently reviewable evidence below the Evidence Boundary.
+Status
+Observed binary source: ESTABLISHED
+Governed selection model: ESTABLISHED
+Formal semantics of the symbolic sequence: NOT_ESTABLISHED
+
+This preserves an important distinction: the symbolic strings (=%#=A+.7= and LoGoS.olos.6185:85ad(MS::CD)) are valid as identifiers or observed inputs within your governance framework, but their meaning should remain explicitly project-defined and not established until a formal grammar, encoding specification, or decoding evidence is added to the repository. This is consistent with the Resolve Kernel’s principle of separating observation, governed representation, and verified interpretation.
+Evidence Boundary
+Binary acquisition, masking, decoding, and validation establish governed
+artifacts above the Evidence Boundary.
+Claims regarding formal verification or operational execution require new,
+independently reviewable evidence below the Evidence Boundary.
+Status
+Observed binary source: ESTABLISHED
+Governed selection model: ESTABLISHED
+Formal semantics of the symbolic sequence: NOT_ESTABLISHED
+
+This preserves an important distinction: the symbolic strings (=%#=A+.7= and LoGoS.olos.6185:85ad(MS::CD)) are valid as identifiers or observed inputs within your governance framework, but their meaning should remain explicitly project-defined and not established until a formal grammar, encoding specification, or decoding evidence is added to the repository. This is consistent with the Resolve Kernel’s principle of separating observation, governed representation, and verified interpretation.
+Binary acquisition, masking, decoding, and validation establish governed
+artifacts above the Evidence Boundary.
+Claims regarding formal verification or operational execution require new,
+independently reviewable evidence below the Evidence Boundary.
+Status
+Observed binary source: ESTABLISHED
+Governed selection model: ESTABLISHED
+Formal semantics of the symbolic sequence: NOT_ESTABLISHED
+
+This preserves an important distinction: the symbolic strings (=%#=A+.7= and LoGoS.olos.6185:85ad(MS::CD)) are valid as identifiers or observed inputs within your governance framework, but their meaning should remain explicitly project-defined and not established until a formal grammar, encoding specification, or decoding evidence is added to the repository. This is consistent with the Resolve Kernel’s principle of separating observation, governed representation, and verified interpretation.
+# gitignore contributors#^%#%:^:#%: :\.:/remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## User settings
 xcuserdata/

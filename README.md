@@ -1,4 +1,125 @@
-ENGINE
+ENGINEInterpreting “1 sheet=Compute.Stack.=6185:85ad.” as a request for a single specification sheet, this could be expressed as follows.
+
+⸻
+
+Compute.Stack — 6185:85ad
+
+Identifier
+
+Compute.Stack.=6185:85ad
+
+Purpose
+
+Defines the canonical computation stack for the Resolve Generate Paradigm. The stack separates deterministic computation, governance, evidence, and operational execution while preserving canonical identity and traceability.
+
+⸻
+
+Stack Layers
+
+Layer	Name	Responsibility	Status
+L0	Registry	Canonical identities and namespaces	Canonical
+L1	Graph	Components, assemblies, artifacts, evidence	Canonical
+L2	Selection	Deterministic governed selection	Pure
+L3	Generation	Construct governed objects	Deterministic
+L4	Validation	Schema and policy evaluation	Governed
+Evidence Boundary	—	Promotion requires independent evidence	Governance Gate
+L5	Formal Verification	Proof generation and acceptance	External Evidence
+L6	Runtime	Executable implementation	Operational
+L7	Deployment	Managed operational environment	Operational
+
+⸻
+
+Compute Pipeline
+
+Registry
+    │
+    ▼
+Canonical Graph
+    │
+    ▼
+Select(Graph, Rules, Context)
+    │
+    ▼
+Generate
+    │
+    ▼
+Validate
+    │
+──────── Evidence Boundary ────────
+    │
+    ▼
+Formal Verification
+    │
+    ▼
+Runtime
+    │
+    ▼
+Deployment
+
+⸻
+
+Functional Composition
+
+\text{Commit}
+\circ
+\text{RecordEvidence}
+\circ
+\text{Generate}
+\circ
+\text{Select}
+
+where:
+
+* Select is pure and deterministic.
+* Generate constructs governed outputs.
+* RecordEvidence appends provenance.
+* Commit performs the governed write.
+
+⸻
+
+Core Invariants
+
+1. Identity Stability
+    Canonical identities are immutable.
+2. Graph Invariance
+    Selection never mutates the graph.
+3. Evidence Monotonicity
+    Evidence is appended, never replaced.
+4. Governed Context
+    Context is a governed projection of the graph.
+5. Controlled Promotion
+    Crossing the Evidence Boundary requires independently accepted evidence.
+6. Trace Preservation
+    Every generated object retains provenance and evidence references.
+
+⸻
+
+Canonical Signature
+
+\operatorname{Select} :
+\mathbf{Graph}
+\times
+\mathbf{Rules}
+\times
+\mathbf{Context}
+\rightarrow
+\mathcal{P}(\mathbf{Object})
+
+with
+
+\operatorname{Generate}
+=
+\operatorname{Commit}
+\circ
+\operatorname{RecordEvidence}
+\circ
+\operatorname{Select}
+
+⸻
+
+Stack Identifier: 6185:85ad
+Sheet: Compute.Stack
+Role: Canonical computational and governance model for the Resolve Kernel Generate Paradigm.
   ↓
 KERNEL          ← this layer
   ↓

@@ -169,7 +169,158 @@ where \Sigma_1 is the resulting engine state.
  
 Registry Entry
 The canonical registry record is
-E_n= (A,t,\sigma,d,v,c,p),
+E_n=Your proposed Ti:n:T notation can be extended into a project-defined Network in Transition (TiNT) layer while keeping the distinction between specification and execution explicit.
+
+6185 TiNT (Network in Transition) Specification v1.0
+
+Status: Project-defined infrastructure specification
+
+Purpose
+
+The TiNT layer models the movement of transactions between processing stages and systems. It describes the topology and traceability of transitions without assigning business semantics to the payload.
+
+⸻
+
+Layer Position
+
+Application Specifications
+──────────────────────────
+Project Semantics
+──────────────────────────
+Governance & Audit
+──────────────────────────
+TiNT (Network in Transition)
+──────────────────────────
+Execution Specification
+──────────────────────────
+Abstract Machine
+──────────────────────────
+Formal Semantic Core
+──────────────────────────
+Grammar • Serialization • Encodings
+
+⸻
+
+Core Objects
+
+Object	Role	Classification
+Ti	Transaction namespace	Project-defined
+T	Trace record	Project-defined
+TiNT	Network transition layer	Project-defined
+Node	Processing endpoint	Normative infrastructure concept
+Edge	Directed transition	Normative infrastructure concept
+Stage	Processing phase	Normative execution concept
+
+⸻
+
+Transition Graph
+
+Node A
+   │
+   │ Ti:000051:T
+   ▼
+Ingress
+   │
+Observation
+   │
+Recording
+   │
+Specification
+   │
+Normalization
+   │
+Validation
+   │
+Parity
+   │
+Commit
+   │
+Audit
+   │
+Registry
+   │
+   ▼
+Node B
+
+The graph expresses connectivity and provenance. It does not by itself indicate that any transition has successfully executed.
+
+⸻
+
+Transition Record
+
+{
+  "transition_id": "Ti:000051:T",
+  "source_node": "NODE-A",
+  "target_node": "NODE-B",
+  "stage": "validation",
+  "transition_state": "pending",
+  "timestamp": "<utc>",
+  "payload_reference": "<identifier>",
+  "audit_reference": null
+}
+
+⸻
+
+Transition States
+
+State	Meaning
+declared	Transition specified
+pending	Awaiting processing
+active	Currently processing
+completed	Processing completed
+rejected	Transition terminated
+cancelled	Explicitly cancelled
+
+Only a recorded execution may transition to completed.
+
+⸻
+
+Transition Rules
+
+A TiNT implementation should satisfy rules such as:
+
+1. Every transition references exactly one transaction identifier.
+2. Every transition has one source node and one target node.
+3. Transition history is append-only.
+4. Historical transitions remain immutable after completion.
+5. Missing transitions are represented explicitly rather than inferred.
+6. A completed transition may reference audit and commit records where available.
+
+⸻
+
+Privacy Boundary
+
+The TiNT layer identifies transactions, nodes, and relationships, not individuals.
+
+For example:
+
+MASK=PII
+
+applies to personal identifiers associated with a transition, while transaction identifiers remain stable for traceability.
+
+⸻
+
+Evidence Boundary
+
+For the material presented here:
+
+TiNT Layer          : Specified
+Transition Model    : Defined
+Node Relationships  : Defined
+Execution Evidence  : Not provided
+Commit Evidence     : Not provided
+Audit Evidence      : Not provided
+Registry Evidence   : Not provided
+Status              : Specification Only
+
+This maintains the distinction you’ve consistently developed throughout your framework:
+
+* Declarations define the intended structure.
+* Transition records define the network path and provenance.
+* Execution evidence documents what actually occurred.
+* Canonical status can only be asserted when supported by verifiable execution, commit, audit, and registry evidence.
+
+Using “TiNT” as a project-defined name is reasonable within your specification, provided it is clearly documented as an identifier for this transition layer rather than implying any standardized networking protocol or established technical term. (A,t,\sigma,d,v,c,p),
 with
 	•	A: canonical address
 	•	t: raw token

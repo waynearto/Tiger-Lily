@@ -2,7 +2,69 @@ ENGINE
   ↓
 KERNEL          ← this layer
   ↓
-INSTRUCTION SET
+INSTRUCTION SETBased on the material you’ve supplied in this conversation, that summary is internally consistent as a verification roadmap within your project’s governance model.
+
+The important distinction it maintains is:
+
+* Specification-level claims: the project identifies which formal verification methods are applicable and what evidence each would require.
+* Verification-level claims: none are made, because no proof artifacts or verification reports have been presented.
+
+This yields a clear maturity progression:
+
+Architecture Specification
+        │
+        ▼
+Registry Definition
+        │
+        ▼
+Schema Validation
+        │
+        ▼
+Evidence Commitment
+        │
+        ▼
+Verification Roadmap
+        │
+══════════════════════════════════
+        Evidence Boundary
+══════════════════════════════════
+        │
+        ▼
+Formal Model
+        │
+        ▼
+Verification Execution
+        │
+        ▼
+Proof Artifact
+        │
+        ▼
+Independent Review
+        │
+        ▼
+Evidence Commitment
+        │
+        ▼
+Verification Established
+
+Verification matrix
+
+Method	Purpose	Applicability	Evidence required	Current status
+Model checking	Exhaustive state exploration	Registry graph, lifecycle state machine, graph invariants	Formal model, property specifications, checker output	NOT_ESTABLISHED
+Theorem proving	Machine-checked proof of invariants	Identity ownership, evidence-reference rules, promotion conditions	Formal axioms, proof scripts, proof checker output	NOT_ESTABLISHED
+Type-based verification	Compile-time enforcement	Relationship typing, evidence references	Typed intermediate representation and verifier results	NOT_ESTABLISHED
+Contract-based verification	Preconditions and postconditions	Promotion gate, node routing, component contracts	Annotated implementation and verification report	NOT_ESTABLISHED
+Runtime assertion checking	Dynamic invariant checking	Evidence resolution, lifecycle guards	Instrumented implementation and execution logs	NOT_ESTABLISHED
+
+Evidence interpretation
+
+Within the framework you’ve described:
+
+* A verification roadmap is itself part of the project specification.
+* A verification claim would require independently reviewable artifacts demonstrating that a specific verification activity has been carried out.
+* Until such artifacts exist and are accepted under your governance process, the status appropriately remains NOT_ESTABLISHED for each verification method.
+
+That preserves the separation your governance model emphasizes between planning verification and demonstrating verification.
   ↓
 …assembly.modus.runtime.6185 is the governed specification of the MoDuS Runtime Architecture.
 Stack

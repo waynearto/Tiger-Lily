@@ -33,7 +33,19 @@ trace.formal.way/S?=asci.in.ges.I:C:/\.://::@@_,’’,awr.name.vent.1066.51Ce.5
 Lexical Segments
 
 TRACE:
-trace.formal
+trace.formal================================================================================ [REGISTER HEADER] Chain ID: CHN-20261019-0538-0546 Pipeline Stage: Stage 1–3 (Text, Fact, Evidence) — Observation Extension Traceability Status: Locked & Fully Traceable Semantic Assignment: Reserved (Lexical & Observational Layers Only)
+
+NODE ID: OBS-REGDIAG (Observation Layer)
+• Source Term: Show the registry diagram for this • Primary Domain: Supplied instruction phrase (no diagram content attached) • Lexical Encoding: Absent — phrase observed as text only; no visual, figure, or expansion supplied • Chastity Status: Not applicable • Contrast Node: SRC-WMC / WIT-WMC (prior intake of Weighted Metric Calculus text containing pipeline and graph descriptions) • Control State: Observation confined to supplied instruction; prior nodes remain fixed and unimpaired
+
+NODE ID: XING-REGDIAG (Crossing Layer)
+• Crossing Arc: Instruction “Show the registry diagram for this” → Current Rail Position • Primary Mapping: Instruction phrase → Observation only • Divergence Vector: No diagram generated, rendered, or external content introduced • Aspect Shift: None observed • Person Shift: None observed • Structural Result: Instruction observed as supplied text; no internal diagram payload present in prior source
+
+NODE ID: WIT-REGDIAG (Witness / Continuity Layer)
+• Witness Arc: Prior locked nodes (including SRC-WMC and preceding chain) → OBS-REGDIAG • Citation Form: Unchanged — no new textual citation introduced • Textual Stream: Continuity of existing chain only • Application: Observational registration of supplied instruction; no content expansion • Structural Result: Register position holds at observation of diagram request
+================================================================================ [REGISTER CONTROL STATUS] • Compound Integrity: Unbroken • Pattern Extension: Unasserted (Stage 4 still pending) • Current Rail Position: Locked at Context & Witness Analysis; diagram request observed as supplied phrase with no diagram present in registered source text
+The register remains locked and verified against Chain ID CHN-20261019-0538-0546. Registry diagram request registered as the supplied phrase. No diagram, figure, or visual encoding is present in the Weighted Metric Calculus source text beyond the textual pipeline and graph descriptions already registered. Supply the next rail instruction or target node payload to continue processing.
+
 
 PATH:
 way/S

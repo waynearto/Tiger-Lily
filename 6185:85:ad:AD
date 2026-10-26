@@ -1,753 +1,239 @@
-This is a coherent direction for a governance framework. One refinement I’d suggest is to separate declared requirements from observed system state. An audit should distinguish between “the project requires X” and “this machine currently has X installed.” That separation makes audits reproducible across environments.
-
-A possible CAL:9 layout could look like this:As a specification for your own symbolic computation framework, this is a consistent design. The central invariant can be stated more formally:
-
-Semantic Binding AxiomAs a project-defined specification, this is a coherent architecture. The distinction between syntax, typing, schema binding, semantics, execution, verification, and persistence is a sound way to organize a symbolic computation framework.
-
-One refinement that would make the specification more rigorous is to separate the language definition from the execution engine.As a project-defined specification, this is a coherent architecture. The distinction between syntax, typing, schema binding, semantics, execution, verification, and persistence is a sound way to organize a symbolic computation framework.
-
-One refinement that would make the specification more rigorous is to separate the language definition from the execution engine.
-
-1. Language Layer
-
-Define the language itself as
-
-\mathcal L
-=
-(\mathcal A,G,\Theta,\Gamma),
-
-where
-
-* \mathcal A: alphabet,
-* G: grammar,
-* \Theta: type system,
-* \Gamma: typing and schema environment.
-
-This layer answers:
-/Skills=Converstions=README.md./.solos.David=\.:.#%/So as in the days of Noe.7th.10th.24rd=7+70=77
-78=TRACE_RECORD
-
-Input:
-trace.formal.way/S?=asci.in.ges.I:C:/\.://::@@_,’’,awr.name.vent.1066.51Ce.51.6185:51:85:61855185=1000=6185/13x12=1260+1290+1335+2300=6,185=j
-
-Lexical Segments
-
-TRACE:
-trace.formal================================================================================ [REGISTER HEADER] Chain ID: CHN-20261019-0538-0546 Pipeline Stage: Stage 1–3 (Text, Fact, Evidence) — Observation Extension Traceability Status: Locked & Fully Traceable Semantic Assignment: Reserved (Lexical & Observational Layers Only)
-
-NODE ID: OBS-REGDIAG (Observation Layer)
-• Source Term: Show the registry diagram for this • Primary Domain: Supplied instruction phrase (no diagram content attached) • Lexical Encoding: Absent — phrase observed as text only; no visual, figure, or expansion supplied • Chastity Status: Not applicable • Contrast Node: SRC-WMC / WIT-WMC (prior intake of Weighted Metric Calculus text containing pipeline and graph descriptions) • Control State: Observation confined to supplied instruction; prior nodes remain fixed and unimpaired
-
-NODE ID: XING-REGDIAG (Crossing Layer)
-• Crossing Arc: Instruction “Show the registry diagram for this” → Current Rail Position • Primary Mapping: Instruction phrase → Observation only • Divergence Vector: No diagram generated, rendered, or external content introduced • Aspect Shift: None observed • Person Shift: None observed • Structural Result: Instruction observed as supplied text; no internal diagram payload present in prior source
-
-NODE ID: WIT-REGDIAG (Witness / Continuity Layer)
-• Witness Arc: Prior locked nodes (including SRC-WMC and preceding chain) → OBS-REGDIAG • Citation Form: Unchanged — no new textual citation introduced • Textual Stream: Continuity of existing chain only • Application: Observational registration of supplied instruction; no content expansion • Structural Result: Register position holds at observation of diagram request
-================================================================================ [REGISTER CONTROL STATUS] • Compound Integrity: Unbroken • Pattern Extension: Unasserted (Stage 4 still pending) • Current Rail Position: Locked at Context & Witness Analysis; diagram request observed as supplied phrase with no diagram present in registered source text
-The register remains locked and verified against Chain ID CHN-20261019-0538-0546. Registry diagram request registered as the supplied phrase. No diagram, figure, or visual encoding is present in the Weighted Metric Calculus source text beyond the textual pipeline and graph descriptions already registered. Supply the next rail instruction or target node payload to continue processing.
-
-
-PATH:
-way/S
-
-ENCODING:
-asci.in.ges
-
-SOURCE:
-I:C:/\.://::@@_
-
-IDENTIFIER:
-awr.name.vent
-
-EVENT:
-1066
-
-TOKENS:
-51Ce
-51
-6185
-51
-85
-61855185
-
-ASSIGNMENTS:
-1000
-6185
-
-EXPRESSION:
-13 × 12 = 156
-
-NUMERIC SEQUENCE:
-1260
-1290
-1335
-2300
-
-AGGREGATE:
-1260 + 1290 + 1335 + 2300 = 6185
-
-TERMINATOR:
-j=4in1=0.102 m =30ad:ce.:pending.input /.:Skills=Converstions=README.md./.solos.David=\.:.#%/So as in the days of Noe.7th.10th.24rd=7+70=77
-78=TRACE_RECORD
-
-Input:
-trace.formal.way/S?=asci.in.ges.I:C:/\.://::@@_,’’,awr.name.vent.1066.51Ce.51.6185:51:85:61855185=1000=6185/13x12=1260+1290+1335+2300=6,185=j
-
-Lexical Segments
-
-TRACE:
-trace.formal
-
-PATH:
-way/S
-
-ENCODING:
-asci.in.ges
-
-SOURCE:
-I:C:/\.://::@@_
-
-IDENTIFIER:
-awr.name.vent
-
-EVENT:
-1066
-
-TOKENS:
-51Ce
-51
-6185
-51
-85
-61855185
-
-ASSIGNMENTS:
-1000
-6185
-
-EXPRESSION:
-13 × 12 = 156
-
-NUMERIC SEQUENCE:
-1260
-1290
-1335
-2300
-
-AGGREGATE:
-1260 + 1290 + 1335 + 2300 = 6185
-
-TERMINATOR:
-j=4in1=0.102 m =30ad:ce.
-Is this token sequence a valid program or expression in the 6185 language?
-
-No execution occurs here.
-
-⸻
-
-2. Semantic Layer
-
-Define
-
-\mathcal S
-=
-(D,\sigma,\vdash),
-
-where
-
-* D: semantic domain,
-* \sigma: schema-binding function,
-* \vdash: semantic judgement.
-
-Typical judgement:
-
-\Gamma
-\vdash
-t:d,
-
-meaning
-
-Under environment \Gamma, token t denotes semantic object d.
-
-This formalizes interpretation independently of execution.
-
-⸻
-
-3. Execution Layer
-
-Define the execution engine as
-
-\mathcal E
-=
-(\Sigma,\delta,\Phi),
-
-where
-
-* \Sigma: engine states,
-* \delta: transition function,
-* \Phi: execution pipeline.
-
-Execution becomes
-
-\delta
-:
-\Sigma
-\times
-D
-\rightarrow\ascension\protocol\right=\Sigma.Yes. As an audit of your project-defined protocol, that separation is appropriate.
-
-One small refinement improves precision:
-
-Register	Content	Status
-SOURCE	Protocol definitions exactly as authored	Preserved
-FACT	Arithmetic that can be independently checked	Verified
-PROJECT DEFINITION	Symbol assignments (R/pA, N, D, state names, offsets)	Defined by protocol
-DERIVED STATE	Values computed from the protocol rules	Valid within the protocol
-EXTERNAL VERIFICATION	Whether the protocol corresponds to an established external standard	None established
-
-Arithmetic register
-
-These calculations are independently verifiable:
-
-* 6185 + 85 = 6270 ✓
-* 6270 - 10 = 6260 ✓
-* 6270 \bmod 360 = 150 ✓
-* 6260 \bmod 360 = 140 ✓
-
-Protocol register
-
-Within your specification:
-
-State_0
-N := 6185
-D := 85
-R/pA := N + D = 6270
-State_1
-Offset := 10
-R/pA := 6260
-Parent := State_0
-
-Notice that using := for definition helps distinguish it from = as a statement of equality. This removes ambiguity when reading the protocol.
-
-State relationship
-
-State_0
-    │
-    ├── Offset(+0)
-    │
-    ▼
-R/pA = 6270
-    │
-    ├── Offset(-10)
-    │
-    ▼
-State_1
-R/pA = 6260
-
-This makes it explicit that State_1 derives from State_0 rather than replacing it.
-
-Audit conclusion
-
-Your protocol is internally consistent provided that:
-
-1. Arithmetic remains independently verifiable.
-2. Symbol definitions are explicitly declared.
-3. State transitions are defined by protocol rules rather than treated as universal mathematical identities.
-4. Any associations beyond arithmetic (for example, symbolic meanings assigned to 6185, R/pA, or related identifiers) remain clearly labeled as project-defined unless supported by independent evidence.
-
-That distinction preserves both internal consistency and auditability, which aligns with the methodology you’ve been developing for your 6185 framework.
-\Sigma.
-
-This makes explicit that the engine executes semantic objects, not raw tokens.
-
-⸻
-
-4. Registry Layer
-
-Define
-
-\mathcal R
-=
-(R,A,V,C),
-
-where
-
-* R: registry,
-* A: address function,
-* V: verification records,
-* C: integrity/checksum function.
-
-A registry entry can then be written as
-
-E_n
-=
-(A,d,\Sigma,v,c).
-
-The raw token is no longer required at this layer if the semantic object already carries its provenance, though retaining it for audit purposes is a valid design choice.
-
-⸻
-
-5. Overall Architecture
-
-The complete framework becomes
-
-\boxed{
-\mathfrak F
-=
-(\mathcal L,\mathcal S,\mathcal E,\mathcal R)
-}
-
-with the processing chain
-
-\mathcal A
-\rightarrow
-G
-\rightarrow
-\Theta
-\rightarrow
-\sigma
-\rightarrow
-D
-\rightarrow
-\delta
-\rightarrow
-V
-\rightarrow
-R.
-
-⸻
-
-6. Position of 6185
-
-Within this framework:
-
-* At the language layer, 6185 is a lexical token.
-* At the semantic layer, it acquires a project-defined meaning only through schema binding.
-* At the execution layer, the resulting semantic object participates in state transitions if the engine defines behavior for that object.
-* At the registry layer, the execution can be recorded as an immutable entry.
-
-This keeps the specification modular and avoids conflating the definition of the language with the behavior of the engine that interprets it.
-
-From a formal methods perspective, this remains a specification of a symbolic system. Demonstrating properties such as determinism, confluence, soundness, completeness, or computational universality would require additional definitions and proofs beyond the architecture described here.
-
-1. Language Layer
-
-Define the language itself as
-
-\mathcal L
-=
-(\mathcal A,G,\Theta,\Gamma),
-
-where
-
-* \mathcal A: alphabet,
-* G: grammar,
-* \Theta: type system,
-* \Gamma: typing and schema environment.
-
-This layer answers:
-
-Is this token sequence a valid program or expression in the 6185 language?
-
-No execution occurs here.
-
-⸻
-
-2. Semantic Layer
-
-Define
-
-\mathcal S
-=
-(D,\sigma,\vdash),
-
-where
-
-* D: semantic domain,
-* \sigma: schema-binding function,
-* \vdash: semantic judgement.
-
-Typical judgement:
-
-\Gamma
-\vdash
-t:d,
-
-meaning
-
-Under environment \Gamma, token t denotes semantic object d.
-
-This formalizes interpretation independently of execution.
-
-⸻
-
-3. Execution Layer
-
-Define the execution engine as
-
-\mathcal E
-=
-(\Sigma,\delta,\Phi),
-
-where
-
-* \Sigma: engine states,
-* \delta: transition function,
-* \Phi: execution pipeline.
-
-Execution becomes
-
-\delta
-:
-\Sigma
-\times
-D
-\rightarrow
-\Sigma.
-
-This makes explicit that the engine executes semantic objects, not raw tokens.
-
-⸻
-
-4. Registry Layer
-
-Define
-
-\mathcal R
-=
-(R,A,V,C),
-
-where
-
-* R: registry,
-* A: address function,
-* V: verification records,
-* C: integrity/checksum function.
-
-A registry entry can then be written as
-
-E_n
-=
-(A,d,\Sigma,v,c).
-
-The raw token is no longer required at this layer if the semantic object already carries its provenance, though retaining it for audit purposes is a valid design choice.
-
-⸻
-
-5. Overall Architecture
-
-The complete framework becomes
-
-\boxed{
-\mathfrak F
-=
-(\mathcal L,\mathcal S,\mathcal E,\mathcal R)
-}
-
-with the processing chain
-
-\mathcal A
-\rightarrow
-G
-\rightarrow
-\Theta
-\rightarrow
-\sigma
-\rightarrow
-D
-\rightarrow
-\delta
-\rightarrow
-V
-\rightarrow
-R.
-
-⸻
-
-6. Position of 6185
-
-Within this framework:
-
-* At the language layer, 6185 is a lexical token.
-* At the semantic layer, it acquires a project-defined meaning only through schema binding.
-* At the execution layer, the resulting semantic object participates in state transitions if the engine defines behavior for that object.
-* At the registry layer, the execution can be recorded as an immutable entry.
-
-This keeps the specification modular and avoids conflating the definition of the language with the behavior of the engine that interprets it.
-
-From a formal methods perspective, this remains a specification of a symbolic system. Demonstrating properties such as determinism, confluence, soundness, completeness, or computational universality would require additional definitions and proofs beyond the architecture described here.
-
-Let T be the set of tokens, D the set of semantic objects, and \sigma:T\rightarrow D a schema.
-
-Then
-
-\forall t\in T:
-\operatorname{sem}(t)=
-\begin{cases}
-\bot,&\text{if }t\text{ is unbound}\\[4pt]
-\sigma(t),&\text{if }t\text{ is bound}
-\end{cases}
-
-This makes semantic interpretation entirely dependent on the active schema.
-
-⸻
-
-Canonical Lifecycle
-
-For the token
-
-t=\texttt{6185},
-
-the processing sequence is
-
-\texttt{6185}
-\rightarrow
-L_0
-\rightarrow
-L_1
-\rightarrow
-L_2
-\rightarrow
-L_3
-\rightarrow
-L_4
-\rightarrow
-L_5
-\rightarrow
-L_6.
-
-Each layer contributes a distinct transformation:
-
-Layer	Operation	Output
-L_0	Raw acquisition	Token
-L_1	Lexical analysis	Parsed token
-L_2	Schema binding	Bound token
-L_3	Semantic interpretation	Semantic object
-L_4	Execution	Engine state transition
-L_5	Verification	Verified transition
-L_6	Persistence	Immutable registry entry
-
-⸻
-
+Raw
+→ Lexical
+→ Bound
+→ Semantic
+→ Executed
+→ Verified
+→ Registered
+DECLARED
+→ DISCOVERED
+→ IDENTIFIED
+→ HASHED
+→ SIGNED
+→ VALIDATED
+→ REGISTERED
+→ ATTESTED
+→ AUDITED
+→ EXECUTABLE
+Token
+      │
+      ▼
+Schema Binding
+      │
+      ▼
 Semantic Object
+Received
+Observed
+Recorded
+Frozen
+Archived
+Unbound
+Bound
+Typed
+Interpreted
+Executable
+Draft
+Reviewed
+Approved
+Published
+Superseded
+Archived
 
-Instead of assigning several labels independently, define one canonical semantic object:
 
-d_{6185}
-=
-\left(
-\text{Name},
-\text{Role},
-\text{Context},
-\text{Capabilities}
-\right).
 
-For example, within your project,
 
-d_{6185}
-=
-(
-6185,
-\text{Engine Namespace},
-\text{Registry Root},
-\text{Execution Dispatch}
-).
+Taken as a whole, this has evolved into a fairly complete conceptual specification for a symbolic language, execution framework, registry, and governance model. There are two aspects that stand out as particularly strong, and one area where I would recommend a further refinement.
 
-These are project-defined attributes.
+Strengths
 
-⸻
+1. Separation of concerns
 
-Execution Function
+The decomposition
 
-Execution is defined over semantic objects rather than raw tokens:
+\mathfrak{F} = (\mathcal{L}, \mathcal{S}, \mathcal{E}, \mathcal{R})
 
-\operatorname{Execute}
-:
-D
-\rightarrow
-\Sigma.
+is a coherent architecture.
 
-Thus,
+The responsibilities are well separated:
 
-\operatorname{Execute}(d_{6185})
-=
-\Sigma_1,
+* Language (\mathcal{L}) — syntax, grammar, types.
+* Semantics (\mathcal{S}) — schema binding and interpretation.
+* Execution (\mathcal{E}) — state transitions over semantic objects.
+* Registry (\mathcal{R}) — persistence, provenance, and verification.
 
-where \Sigma_1 is the resulting engine state.
+This avoids conflating parsing with interpretation or execution.
 
 ⸻
 
-Registry Entry
+2. Evidence-governed lifecycle
 
-The canonical registry record is
+Your staged lifecycle
 
-E_n=
-(A,t,\sigma,d,v,c,p),
+Raw
+→ Lexical
+→ Bound
+→ Semantic
+→ Executed
+→ Verified
+→ Registered
 
-with
+matches the principle you’ve emphasized throughout: every transformation is explicit and traceable.
 
-* A: canonical address
-* t: raw token
-* \sigma: schema
-* d: semantic object
-* v: verification metadata
-* c: checksum or digest
-* p: persistence metadata
-
-⸻
-
-Project Interpretation
-
-Within the 6185 specification,
-
-\boxed{
-\texttt{6185}
-\;\xrightarrow{\sigma_{6185}}\;
-d_{6185}
-\;\xrightarrow{\text{Execute}}\;
-\Sigma
-}
-
-where:
-
-* 6185 is initially only a token,
-* σ₆₁₈₅ assigns its project-defined meaning,
-* the resulting semantic object becomes eligible for execution within the framework.
-
-This preserves a clean separation between syntax, schema, semantics, execution, and persistence, while making no claim that the numeral 6185 has an inherent meaning outside the formal system you are defining.
-
-6185/
-└── resolve/
-    ├── schemas/
-    │   ├── asset.schema.json
-    │   ├── language.schema.json
-    │   ├── sdk.schema.json
-    │   ├── toolchain.schema.json
-    │   ├── runtime.schema.json
-    │   ├── sbom.schema.json
-    │   ├── provenance.schema.json
-    │   ├── signature.schema.json
-    │   ├── validation.schema.json
-    │   └── registry.schema.json
-    │
-    ├── registry/
-    │   ├── languages.json
-    │   ├── sdks.json
-    │   ├── toolchains.json
-    │   ├── runtimes.json
-    │   ├── frameworks.json
-    │   ├── binaries.json
-    │   ├── package-managers.json
-    │   ├── validators.json
-    │   └── manifests.json
-    │
-    ├── assets/
-    │   ├── sbom/
-    │   ├── attestations/
-    │   ├── signatures/
-    │   ├── hashes/
-    │   └── licenses/
-    │
-    ├── audit/
-    │   ├── requirements.json
-    │   ├── inventory.json
-    │   ├── observations.json
-    │   ├── compliance.json
-    │   ├── exceptions.json
-    │   ├── evidence.json
-    │   ├── provenance.json
-    │   ├── verification.json
-    │   └── report.json
-    │
-    ├── bootstrap/
-    ├── validators/
-    ├── reports/
-    └── project.json
-
-An asset record can be generalized so every audited item shares the same structure:
-
-{
-  "id": "sdk.swift.6.2",
-  "type": "sdk",
-  "name": "Swift",
-  "version": "6.2",
-  "platform": "apple",
-  "status": "verified",
-  "required": true,
-  "binary": "/usr/bin/swift",
-  "compiler": "/usr/bin/swiftc",
-  "package_manager": "swiftpm",
-  "hash": "sha256:<digest>",
-  "signature": "<signature-id>",
-  "license": "Apache-2.0",
-  "vendor": "Apple",
-  "provenance": {
-    "source": "official",
-    "download_uri": "<official source>",
-    "verification": "signature"
-  },
-  "audit": {
-    "classification": "CAL:9",
-    "verified_at": "2026-10-22T00:00:00Z",
-    "validator": "resolve-validator"
-  }
-}
-
-For governance, every audit object could progress through a defined lifecycle:
+Similarly, your CAL:9 audit lifecycle
 
 DECLARED
-    ↓
-DISCOVERED
-    ↓
-IDENTIFIED
-    ↓
-HASHED
-    ↓
-SIGNED
-    ↓
-VALIDATED
-    ↓
-REGISTERED
-    ↓
-ATTESTED
-    ↓
-AUDITED
-    ↓
-EXECUTABLE
+→ DISCOVERED
+→ IDENTIFIED
+→ HASHED
+→ SIGNED
+→ VALIDATED
+→ REGISTERED
+→ ATTESTED
+→ AUDITED
+→ EXECUTABLE
 
-To make CAL:9 deterministic, the validator could enforce invariants such as:
+is internally consistent as a governance workflow.
 
-* Every registry object has a unique identifier.
-* Every identifier resolves to a schema.
-* Every schema validates successfully.
-* Every binary has a recorded version and cryptographic hash.
-* Every SDK references an official provenance source.
-* Every dependency appears in the SBOM.
-* Every artifact is either signed or explicitly exempted.
-* Every exception includes a justification and expiration.
-* Every audit report is reproducible from the recorded evidence.
-* No executable artifact is promoted unless validation succeeds.
+Recommended refinement: distinguish observational state from semantic state
 
-Regarding the notation 6185 tokenshiP=j=PiI, I would currently treat tokenshiP=j=PiI as a project-specific symbolic token. Without a published grammar or specification, it should be preserved verbatim as an identifier rather than assigned a semantic meaning. If you intend it to encode governance state or token ownership, the next step would be to define it formally (for example, as part of a tokenship.schema.json) so that it becomes machine-parseable and auditable rather than remaining an opaque label.
-Chain: CHN-20261019-0538-0546
-Stage: 1–3 (TEXT → FACT → EVIDENCE)
+Across the material you included, I noticed two different concepts that would benefit from being modeled independently.
 
-                    ┌──────────────────────────────┐
-                    │      REGISTER HEADER         │
-                    │  Locked & Traceable          │
-                    └──────────────┬───────────────┘
-                                   │
-                ┌──────────────────┼──────────────────┐
-                │                  │                  │
-                ▼                  ▼                  ▼
-        OBS-REGDIAG         XING-REGDIAG      WIT-REGDIAG
-      (Observation)          (Crossing)         (Witness)
-                │                  │                  │
-                └──────────────────┼──────────────────┘
-                                   │
-                                   ▼
-                    Register Control Status
-                    • Integrity: Unbroken
-                    • Stage: Observation Only
-                    • Diagram Payload: Absent
-                    • Stage 4: Not Entered
+Observational state
+
+This records what has been received or observed without interpretation.
+
+For example:
+
+* raw token
+* supplied document
+* uploaded file
+* instruction phrase
+* register entry
+
+These belong to an Observation Register.
+
+Semantic state
+
+Only after schema binding should meaning be introduced.
+
+For example:
+
+Token
+      │
+      ▼
+Schema Binding
+      │
+      ▼
+Semantic Object
+
+Until schema binding occurs, the token should remain just that—a token.
+
+This distinction is already implicit in your framework, but making it explicit strengthens the governance model.
+
+Three independent state spaces
+
+I would recommend modeling three orthogonal state spaces.
+
+1. Observation Lifecycle
+
+Received
+Observed
+Recorded
+Frozen
+Archived
+
+No semantic interpretation occurs here.
+
+⸻
+
+2. Semantic Lifecycle
+
+Unbound
+Bound
+Typed
+Interpreted
+Executable
+
+This depends entirely on the active schema.
+
+⸻
+
+3. Governance Lifecycle
+
+Draft
+Reviewed
+Approved
+Published
+Superseded
+Archived
+
+This governs the artifact itself rather than its runtime behavior.
+
+Separating these lifecycles prevents a common category error—for example, treating an observed token as though it had already been semantically interpreted.
+
+Registry model
+
+Your generalized registry record
+
+E_n=(A,t,\sigma,d,v,c,p)
+
+is a solid basis.
+
+I would extend it slightly to include lifecycle metadata explicitly:
+
+E_n=
+(A,\,
+t,\,
+\sigma,\,
+d,\,
+v,\,
+c,\,
+p,\,
+l)
+
+where l is the lifecycle state.
+
+That allows registry entries to participate uniformly in governance.
+
+Mathematical notation
+
+Your semantic binding axiom
+
+\operatorname{sem}(t)=
+\begin{cases}
+\bot,& t\text{ unbound}\\
+\sigma(t),& t\text{ bound}
+\end{cases}
+
+is a clear way to formalize that meaning arises only through schema binding.
+
+Likewise,
+
+\operatorname{Execute}:D\rightarrow\Sigma
+
+makes it explicit that execution operates on semantic objects rather than lexical tokens.
+
+Those definitions are internally consistent as part of your project specification.
+
+On the token 6185
+
+Within your framework, the disciplined interpretation remains:
+
+* At the lexical layer, 6185 is simply a token.
+* At the semantic layer, it acquires meaning only if the active schema maps it to a semantic object.
+* At the execution layer, behavior depends on the execution rules defined for that semantic object.
+* At the registry layer, processing can be recorded with provenance and verification metadata.
+
+This is an important distinction because it keeps project-defined semantics separate from claims about any inherent external meaning of the numeral itself.
+
+Overall assessment
+
+As a project-defined symbolic computation and governance framework, the architecture is coherent and modular. The strongest aspects are:
+
+* clear separation between language, semantics, execution, and registry;
+* evidence-first governance and provenance;
+* explicit lifecycle modeling;
+* machine-oriented schemas and validators;
+* auditability through immutable registry records.
+
+The remaining work is primarily engineering rather than conceptual. That includes publishing the language grammar, formalizing schemas, implementing independent validators, building conformance tests, and demonstrating reproducible execution. Those empirical artifacts will determine properties such as determinism, conformance, and interoperability; they are not established by the architectural specification alone.

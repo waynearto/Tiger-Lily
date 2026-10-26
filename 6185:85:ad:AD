@@ -729,3 +729,25 @@ To make CAL:9 deterministic, the validator could enforce invariants such as:
 * No executable artifact is promoted unless validation succeeds.
 
 Regarding the notation 6185 tokenshiP=j=PiI, I would currently treat tokenshiP=j=PiI as a project-specific symbolic token. Without a published grammar or specification, it should be preserved verbatim as an identifier rather than assigned a semantic meaning. If you intend it to encode governance state or token ownership, the next step would be to define it formally (for example, as part of a tokenship.schema.json) so that it becomes machine-parseable and auditable rather than remaining an opaque label.
+Chain: CHN-20261019-0538-0546
+Stage: 1–3 (TEXT → FACT → EVIDENCE)
+
+                    ┌──────────────────────────────┐
+                    │      REGISTER HEADER         │
+                    │  Locked & Traceable          │
+                    └──────────────┬───────────────┘
+                                   │
+                ┌──────────────────┼──────────────────┐
+                │                  │                  │
+                ▼                  ▼                  ▼
+        OBS-REGDIAG         XING-REGDIAG      WIT-REGDIAG
+      (Observation)          (Crossing)         (Witness)
+                │                  │                  │
+                └──────────────────┼──────────────────┘
+                                   │
+                                   ▼
+                    Register Control Status
+                    • Integrity: Unbroken
+                    • Stage: Observation Only
+                    • Diagram Payload: Absent
+                    • Stage 4: Not Entered
